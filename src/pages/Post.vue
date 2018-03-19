@@ -1,13 +1,13 @@
 <template>
     <v-app id="inspire">
-        <v-content>
         <v-container
                 grid-list-md
                 justify-center
+                fluid
                 tag="section"
         >
             <v-layout row wrap>
-                <v-flex>
+                <v-flex page>
                     <v-layout row wrap>
                         <v-flex d-flex xs12 sm7 md7>
                             <v-carousel>
@@ -23,20 +23,18 @@
                         </v-flex>
                     </v-layout>
                 </v-flex>
+                <v-flex>
+                    <div>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam.
 
+                        Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</div>
+                </v-flex>
             </v-layout>
-        </v-container>
-        </v-content>
-        <v-container fluid footer>
-            <div>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam.
-
-                Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</div>
         </v-container>
         <v-footer height="auto">
             <v-card
                     flat
                     tile
-                    class="black lighten-1 white--text text-xs-center"
+                    class="indigo lighten-1 white--text text-xs-center"
             >
                 <v-card-text>
                     <v-btn
@@ -96,6 +94,15 @@
 
 <style>
     .container {
+        padding-bottom:0px !important;
+    }
+    .page {
+        max-width:900px;
+        margin:auto;
         background: #fff;
+        padding-bottom:0px !important;
+    }
+    .flex .layout {
+        margin-bottom: 0px !important;
     }
 </style>
